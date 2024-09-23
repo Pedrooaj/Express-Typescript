@@ -1,5 +1,11 @@
-import App from "./App";
+import express from 'express';
 
+const App = () => {
+    const app: express.Application = express();
 
-App();
+    app.listen(3000, () => {
+        console.log("Servidor rodando na porta 3000");
+    });
+}
 
+export default App;
