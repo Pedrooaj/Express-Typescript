@@ -1,7 +1,5 @@
-import express from 'express';
+import App from "./App";
 
-const app: express.Application = express();
 
-app.listen(3000, () => {
-    console.log("Servidor rodando na porta 3000");
-})
+App();
+
